@@ -1,7 +1,7 @@
 # undigital-support
 
 The support page and privacy policy for **Undigital**, a film emulation effect for Final Cut Pro
-on the Mac. Served by GitHub Pages (once published).
+on the Mac. Served by GitHub Pages at https://dashing-daniel-li.github.io/undigital-support/
 
 - `index.html`: support page, getting started and FAQ, used as the App Store **Support URL**
 - `privacy.html`: privacy policy, used as the App Store **Privacy Policy URL**
