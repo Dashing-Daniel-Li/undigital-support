@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Undigital — Support</title>
+<meta name="description" content="Support and help for Undigital, a film emulation effect for Final Cut Pro on the Mac: halation, grain, print colour and gate weave.">
+<meta name="theme-color" content="#e8610f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="mark.png">
+<link rel="stylesheet" href="style.css">
+<!-- Set before first paint so revealed content never flashes. -->
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="wrap">
+
+<header>
+  <img src="mark.png" alt="Undigital app icon" width="108" height="108">
+  <h1>Undigital</h1>
+  <p class="tagline">Film emulation for Final Cut Pro.</p>
+  <p class="nav"><a href="privacy.html">Privacy Policy</a></p>
+</header>
+
+<h2 class="reveal">What it does</h2>
+
+<p class="reveal">Undigital is an effect for Final Cut Pro that gives your footage
+the look of motion picture and still film. It runs each frame through a model of
+the whole photochemical chain (the camera film, its development, the print and
+the projector) and then adds what film itself adds: halation, grain, gate weave,
+dust and scratches.</p>
+
+<p class="reveal">The Undigital app is the effect's installer and guide. Open it
+once and it installs the effects into Final Cut Pro; after that, everything
+happens in Final Cut.</p>
+
+<h2 id="start" class="reveal">Getting started</h2>
+
+<div class="card reveal">
+<ol>
+  <li>Open Undigital once. It shows "The Undigital effects are installed in Final Cut Pro".</li>
+  <li>Quit and reopen Final Cut Pro. Final Cut looks for new effects when it starts.</li>
+  <li>Open the Effects browser (click the Effects button at the top right of the timeline,
+  or press ⌘5) and choose the Undigital category.</li>
+  <li>Skim over a look to preview it on your clip, then drag it onto the clip.</li>
+  <li>Fine-tune it in the inspector: Film Look, Amount, Exposure, Warmth, Contrast,
+  Grain and Halation are at the top. The finer controls are in the sections underneath.</li>
+</ol>
+</div>
+
+<h2 id="faq" class="reveal">Common questions</h2>
+
+<details class="faq reveal">
+  <summary>I installed Undigital but the effects are not in Final Cut Pro.</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>Open the Undigital app once, so it can install the effects, then quit Final
+    Cut Pro completely (⌘Q) and open it again. Final Cut only looks for new effects
+    when it starts. In the Effects browser, choose the Undigital category, or type
+    "Undigital" in the browser's search field.</p>
+    <p>If the Undigital window says the effects could not be installed, check that
+    your Movies folder can be written to: the effects are installed in
+    Movies ▸ Motion Templates. Then open Undigital again.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>The look is too strong, or too subtle.</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>Amount, the second row of the inspector, sets how much of the whole effect
+    you see, from 0% (your original picture) to 100%. For a stronger texture, raise
+    Grain and Halation; for a different colour, try another Film Look or add a
+    Colour Style on top. To compare with the original, untick the Undigital
+    checkbox in the inspector.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>Faces look orange or grey.</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>Set Exposure first so faces sit where you want them: film is kind to a
+    slightly bright clip and harsh to a dark one. If skin still looks wrong, ease
+    off Colour Separation (in Camera Film) or lower Style Amount.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>How do I use it with log footage?</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>If Final Cut Pro is already converting your log footage (its log
+    conversion is on in the clip's settings), leave Camera on Automatic. If you
+    have switched Final Cut's conversion off, open Source Footage in the inspector
+    and choose your camera's log under Camera.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>How do I apply the same look to a whole scene?</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>Copy a graded clip (⌘C), select the other clips, then choose
+    Edit ▸ Paste Attributes and tick Undigital. To keep a look for later, click
+    Save Effects Preset at the bottom of the inspector; it appears in the Effects
+    browser.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>What are the measured film stocks?</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>An optional, free download offered in the Undigital window: more film
+    stocks and prints built from the film makers' published datasheets, about
+    6 MB. The data is by Andrea Volpato (the spektrafilm project), licensed
+    CC BY-SA 4.0. The download only happens when you click the button.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>Are the looks exact copies of real films?</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>No. The built-in stocks are models of how each kind of film behaves, and
+    the film looks in the Film Look menu are matched to well-known films, not
+    measured from the films themselves. Film
+    names in the app say which product a look is modelled on or matched to.
+    Undigital is not affiliated with, or endorsed by, their makers.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>Why does Undigital ask for access to my Movies folder?</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>Final Cut Pro finds effects in Movies ▸ Motion Templates, so that is where
+    Undigital installs them. It does not read your films or anything else in that
+    folder.</p>
+  </div></div>
+</details>
+
+<details class="faq reveal">
+  <summary>Does it work in DaVinci Resolve or Premiere Pro?</summary>
+  <div class="faq-panel"><div class="faq-body">
+    <p>Not yet. Undigital works in Final Cut Pro. It runs on Apple
+    silicon and Intel Macs.</p>
+  </div></div>
+</details>
+
+<h2 class="reveal">Something else</h2>
+
+<p class="reveal">Bugs, requests, or anything the answers above don't cover:
+<a href="mailto:daniel.li.work+support@gmail.com">daniel.li.work+support@gmail.com</a></p>
+
+<footer>
+  <p>Undigital for Final Cut Pro<br>
+  <a href="privacy.html">Privacy Policy</a></p>
+  <p>Final Cut Pro is a trademark of Apple Inc.</p>
+</footer>
+
+</div>
+<script src="site.js" defer></script>
+</body>
+</html>
